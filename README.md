@@ -7,11 +7,11 @@ This repository contains the implementation for my MSc Data Analytics dissertati
 
 To analyse IPL ball-by-ball data (2018–2025) and develop:
 
-Descriptive insights — Player, team, and venue-level performance trends.
+Descriptive insights - Player, team, and venue-level performance trends.
 
-Predictive models — Forecasting match outcomes (batting first win vs chasing win).
+Predictive models - Forecasting match outcomes (batting first win vs chasing win).
 
-Interactive dashboard — A Streamlit web app for dynamic filtering, visualisation, and exporting insights.
+Interactive dashboard - A Streamlit web app for dynamic filtering, visualisation, and exporting insights.
 
 📂 Repository Contents
 
