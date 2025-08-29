@@ -21,7 +21,7 @@ CMAPA.html → Jupyter Notebook export with full exploratory analysis, feature e
 
 report_MSCDA.docx → Full dissertation write-up (MSc Data Analytics, University of Strathclyde).
 
-data/ (not included in repo, to be added locally) → Match & delivery datasets from Cricsheet.org.
+data - ipl_json.zip → Match & delivery datasets from Cricsheet.org.
 
 🛠️ Tech Stack
 
