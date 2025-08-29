@@ -1,4 +1,4 @@
-🏏 Predictive Modelling & Dashboard for IPL Cricket (2018–2025)
+🏏 Predictive Modelling and Interactive Dashboard for Cricket Match and Player Performance Analysis in the Indian Premier League (IPL)
 
 This repository contains the implementation for my MSc Data Analytics dissertation project:
 “Predictive Modelling and Interactive Dashboard for Cricket Match and Player Performance Analysis in the Indian Premier League (IPL)” by Gowtham Kumar Mani Periyasamy (University of Strathclyde, 2025).
