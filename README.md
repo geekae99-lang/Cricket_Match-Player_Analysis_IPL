@@ -1,62 +1,110 @@
-🏏 Predictive Modelling and Interactive Dashboard for Cricket Match and Player Performance Analysis in the Indian Premier League (IPL)
+# 🏏 IPL Match & Player Performance Analysis
 
-This repository contains the implementation for my MSc Data Analytics dissertation project:
-“Predictive Modelling and Interactive Dashboard for Cricket Match and Player Performance Analysis in the Indian Premier League (IPL)” by Gowtham Kumar Mani Periyasamy (University of Strathclyde, 2025).
+![Dissertation Cover](https://i.imgur.com/7p4hJgN.png)
 
-🎯 Project Aim
+This repository contains the full implementation for the MSc Data Analytics dissertation project: **"Predictive Modelling and Interactive Dashboard for Cricket Match and Player Performance Analysis in the Indian Premier League (IPL)"**.
 
-To analyse IPL ball-by-ball data (2018–2025) and develop:
+**Author:** Gowtham Kumar Mani Periyasamy  
+**Institution:** University of Strathclyde (2025)  
+**Supervisor:** Dr. Lindsey Corson
 
-Descriptive insights - Player, team, and venue-level performance trends.
+---
 
-Predictive models - Forecasting match outcomes (batting first win vs chasing win).
+## 🎯 Project Overview
 
-Interactive dashboard - A Streamlit web app for dynamic filtering, visualisation, and exporting insights.
+This project provides a comprehensive data-driven analysis of the Indian Premier League (IPL) from 2018 to 2025. It delivers two distinct, high-value outputs:
 
-📂 Repository Contents
+1.  **A High-Performance Predictive Model:** An ensemble machine learning model trained to forecast IPL match outcomes with high accuracy.
+2.  **An Interactive Analytics Dashboard:** A user-friendly web application built with Streamlit for dynamic exploration of team, player, and venue statistics.
 
-ipl_dashboard.py → Streamlit dashboard app (team insights, players, venues, matches).
+---
 
-CMAPA.html → Jupyter Notebook export with full exploratory analysis, feature engineering, and model training.
+## ✨ Key Features
 
-report_MSCDA.docx → Full dissertation write-up (MSc Data Analytics, University of Strathclyde).
+* **End-to-End Data Pipeline:** From raw JSON data parsing and cleaning to advanced feature engineering.
+* **Advanced Predictive Modelling:** Implements and compares multiple classifiers, culminating in a blended ensemble of CatBoost and a Stacking model for optimal performance.
+* **High Accuracy:** The final model achieved **~95% accuracy** on a real-world validation set of 215 unseen matches from the 2023–2025 IPL seasons.
+* **Explainable AI (XAI):** Uses SHAP (SHapley Additive exPlanations) to interpret model predictions, identifying key drivers of match outcomes like toss decisions, venue advantage, and team form.
+* **Interactive Dashboard:** A standalone Streamlit application for deep-dive analysis, featuring dynamic filters, auto-generated insights, and data export capabilities.
 
-data - ipl_json.zip → Match & delivery datasets from Cricsheet.org.
+---
 
-🛠️ Tech Stack
+## 📊 Interactive Dashboard Preview
 
-Python: pandas, numpy, scikit-learn, xgboost, lightgbm, catboost, shap, optuna
+The Streamlit dashboard allows users to explore historical data without writing any code.
 
-Visualisation: matplotlib, plotly
 
-Dashboard: Streamlit
 
-Data Source: Cricsheet.org
+---
 
-🔍 Key Features
+## 🛠️ Tech Stack
 
-End-to-end pipeline: data cleaning → feature engineering → ML models → interpretability → dashboard.
+* **Data Analysis & Modelling:** Python, Pandas, NumPy, Scikit-learn
+* **ML Frameworks:** XGBoost, LightGBM, CatBoost, Optuna (for hyperparameter tuning)
+* **Interpretability:** SHAP
+* **Dashboard:** Streamlit
+* **Visualisation:** Matplotlib, Plotly, Seaborn
+* **Data Source:** [Cricsheet.org](https://cricsheet.org/)
 
-Predictive modelling using CatBoost, XGBoost, LightGBM, Stacking & Blended Ensembles.
+---
 
-83% test accuracy, ROC-AUC ≈ 0.91, with ~95% real-world validation accuracy on unseen IPL matches.
+## 📂 Repository Structure
 
-SHAP analysis for interpretable AI — toss decision, venue, and powerplay performance emerged as top predictors.
+```
+├── 📂 data/
+│   └── ipl_json.zip          # Raw ball-by-ball data from Cricsheet (2018-2025)
+├──  notebooks/
+│   └── CMAPA.ipynb           # Jupyter Notebook with the full analysis pipeline
+├── 📄 ipl_dashboard.py      # The Streamlit dashboard application script
+├── 📄 requirements.txt      # Required Python packages for the project
+└── 📄 README.md             # You are here!
+```
 
-Streamlit dashboard with tabs for: Team Insights, Overview, Batting, Bowling, Matches, Players, Venues, Team-Venue performance.
+---
 
-📊 Example Insights
+## ⚙️ Installation & Setup
 
-Teams chasing generally outperform, confirming the dew-factor advantage.
+To run this project locally, follow these steps:
 
-Venue conditions (e.g., Bengaluru, Wankhede) heavily impact scoring rates.
+1.  **Clone the repository:**
+    ```bash
+    git clone [https://github.com/your-username/your-repo-name.git](https://github.com/your-username/your-repo-name.git)
+    cd your-repo-name
+    ```
 
-Ensemble models outperform baselines, offering reliable win forecasts.
+2.  **Create a virtual environment (recommended):**
+    ```bash
+    python -m venv venv
+    source venv/bin/activate  # On Windows, use `venv\Scripts\activate`
+    ```
 
-🚀 Future Work
+3.  **Install the required packages:**
+    ```bash
+    pip install -r requirements.txt
+    ```
 
-Real-time analytics with streaming pipelines (Kafka/Spark).
+4.  **Unzip the data:**
+    * The analysis notebook assumes the `ipl_json.zip` file located in the `data/` directory is extracted.
 
-Fusion of multimodal data (video, player fitness, social media).
+---
 
-Cloud deployment for franchise or fantasy-cricket use cases.
+## 🚀 How to Use
+
+This project has two main components you can run:
+
+### 1. The Jupyter Notebook
+
+The full end-to-end analysis, from data cleaning and EDA to feature engineering and model training, is documented in the Jupyter Notebook.
+
+* Navigate to the `notebooks/` directory and run `CMAPA.ipynb` using Jupyter Notebook or JupyterLab.
+
+### 2. The Streamlit Dashboard
+
+To launch the interactive web application:
+
+1.  Make sure you are in the root directory of the project.
+2.  Run the following command in your terminal:
+    ```bash
+    streamlit run ipl_dashboard.py
+    ```
+3.  Your web browser will open with the dashboard running locally.
