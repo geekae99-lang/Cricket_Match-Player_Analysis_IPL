@@ -1,6 +1,5 @@
 # 🏏 IPL Match & Player Performance Analysis
 
-![Dissertation Cover](https://i.imgur.com/7p4hJgN.png)
 
 This repository contains the full implementation for the MSc Data Analytics dissertation project: **"Predictive Modelling and Interactive Dashboard for Cricket Match and Player Performance Analysis in the Indian Premier League (IPL)"**.
 
