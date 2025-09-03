@@ -50,13 +50,10 @@ The Streamlit dashboard allows users to explore historical data without writing 
 ## 📂 Repository Structure
 
 ```
-├── 📂 data/
-│   └── ipl_json.zip          # Raw ball-by-ball data from Cricsheet (2018-2025)
-├──  notebooks/
-│   └── CMAPA.ipynb           # Jupyter Notebook with the full analysis pipeline
-├── 📄 ipl_dashboard.py      # The Streamlit dashboard application script
-├── 📄 requirements.txt      # Required Python packages for the project
-└── 📄 README.md             # You are here!
+│── ipl_json.zip          # Raw ball-by-ball data from Cricsheet (2018-2025)
+|── CMAPA.ipynb           # Jupyter Notebook with the full analysis pipeline
+├── ipl_dashboard.py      # The Streamlit dashboard application script
+└── README.md             # You are here!
 ```
 
 ---
